@@ -1,0 +1,10 @@
+the models can be loaded with
+
+tf.keras.models.load_model(model_save_path, custom_objects={"r_square": tfa.metrics.r_square.RSquare()})
+
+using 
+
+import tensorflow as tf
+import tensorflow_addons as tfa
+
+libraries
