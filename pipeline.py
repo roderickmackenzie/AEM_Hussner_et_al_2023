@@ -26,7 +26,7 @@
 
 import os
 import sys
-sys.path.append(os.path.join(os.path.expanduser('~'), 'ML_code'))
+sys.path.append(os.path.join(os.path.expanduser('~'), 'AEM_Hussner_et_al_2023'))
 import training as training
 import predict as predict
 
@@ -35,16 +35,16 @@ def main():
     # to identify a feature = ML token in oghma
     feature_regex = 'vec'
     # path of the data set
-    dataset_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data', 'data')
+    dataset_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023', 'data')
     # path to where the experimental data as csv file is
-    device_path = os.path.join(os.path.expanduser('~'), 'AEM_Hussner_et_al_2023_model_data')
+    device_path = os.path.join(os.path.expanduser('~'), 'AEM_Hussner_et_al_2023')
     devices = ['example_input']
     # light intensities at which the JV curves are available\ simulated
     intensities = [ 0.0001, 0.0003, 0.001, 0.003, 0.01, 0.03, 0.1, 0.3, 1.0]
     # voltages at which jv curves in oghma were simulated
     
     for device in devices:
-        model_path = os.path.join(os.path.expanduser('~'), 'AEM_Hussner_et_al_2023_model_data', device)
+        model_path = os.path.join(os.path.expanduser('~'), 'AEM_Hussner_et_al_2023', device)
         model_name = 'mu_geom_jsc'
         save_p = 'True'
         save_m = 'True'

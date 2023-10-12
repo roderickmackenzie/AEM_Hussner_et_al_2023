@@ -33,15 +33,14 @@ import pickle
 import tensorflow as tf
 import tensorflow_addons as tfa
 
-sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data', 'modules'))
-from opkm_plot import make_fig
-sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data'))
+sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023', 'modules'))
+sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023'))
 import class_ml_data_pipe as mldata
 from plotnames_dict_pipe import load_json
 
 import logging
 import logging.config
-logger_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data', 'logger')
+logger_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023', 'logger')
 logging.config.fileConfig(fname=os.path.join(logger_path, 'file.conf'), disable_existing_loggers=False)
 # Get the logger specified in the file
 logger = logging.getLogger('fileLogger')

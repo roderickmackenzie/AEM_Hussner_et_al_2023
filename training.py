@@ -35,7 +35,7 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 from tensorflow import keras
 
-sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data'))
+sys.path.append(os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023'))
 import class_nnmodel_pipe as nn
 import class_ml_data_pipe as mldata
 import class_ml_evaluation_pipe as ev
@@ -44,7 +44,7 @@ from plotnames_dict_pipe import load_json
 
 import logging
 import logging.config
-logger_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023_model_data', 'logger')
+logger_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023', 'logger')
 logging.config.fileConfig(fname=os.path.join(logger_path, 'file.conf'), disable_existing_loggers=False)
 # Get the logger specified in the file
 logger = logging.getLogger('fileLogger')

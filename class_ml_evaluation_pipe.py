@@ -32,7 +32,7 @@ import logging
 import logging.config
 import pandas as pd
 
-logger_path = os.path.join(os.path.expanduser("~"), 'ML_code', 'logger')
+logger_path = os.path.join(os.path.expanduser("~"), 'AEM_Hussner_et_al_2023', 'logger')
 logging.config.fileConfig(fname=os.path.join(logger_path, 'file.conf'), disable_existing_loggers=True)
 # Get the logger specified in the file
 logger = logging.getLogger('fileLogger')
